@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vocabulary Trainer</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  
+  <div class="header">
+    <h1>Vocab Trainer</h1>
+    <p>English → Spanish</p>
+  </div>
+
+  <!-- WELCOME -->
+  <div id="welcomeScreen">
+    <div class="welcome-card">
+      <div class="emoji">🧠</div>
+      <p>Practica tu vocabulario con <span class="word-count" id="wordCountDisplay"></span> palabras.<br>Escribe el significado en español.</p>
+      <div id="apiStatus" class="api-status loading">🌐 Cargando traducciones externas…</div>
+      <button class="btn-start" id="startBtn">Comenzar →</button>
+    </div>
+  </div>
+
+  <!-- QUIZ -->
+  <div id="quizScreen" class="hidden">
+
+    <div class="card">
+      <!-- Score bar -->
+      <div class="score-bar">
+        <span class="score-label">Aciertos</span>
+        <div class="score-track"><div class="score-fill" id="scoreFill"></div></div>
+        <span class="score-pct" id="scorePct">—</span>
+      </div>
+
+      <div class="score-counts">
+        <div class="count-box total">
+          <div class="num" id="cTotal">0</div>
+          <div class="lbl">Total</div>
+        </div>
+        <div class="count-box correct">
+          <div class="num" id="cCorrect">0</div>
+          <div class="lbl">Correctas</div>
+        </div>
+        <div class="count-box wrong">
+          <div class="num" id="cWrong">0</div>
+          <div class="lbl">Errores</div>
+        </div>
+      </div>
+
+      <!-- Word -->
+      <div class="word-area">
+        <span class="word-tag">Traduce al español</span>
+        <div id="word">—</div>
+        <span class="round-progress" id="roundProgress"></span>
+      </div>
+
+      <!-- Feedback -->
+      <div id="result"></div>
+
+      <!-- Answer input -->
+      <div class="input-wrap">
+        <input type="text" id="answer" placeholder="Escribe el significado en español…" autocomplete="off" autocorrect="off" spellcheck="false">
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="checkAnswer()">✓ Comprobar</button>
+        <button class="btn-secondary" onclick="nextWord()">→ Siguiente</button>
+      </div>
+
+      <p class="hint">Presiona <strong>Enter</strong> para comprobar / siguiente</p>
+
+      <button class="reset-btn" onclick="resetScore()">↺ Reiniciar puntaje</button>
+    </div>
+
+  </div>
+
+  <!-- ADD WORD -->
+  <div class="add-section">
+    <h3>+ Agregar palabra</h3>
+    <div class="add-row">
+      <input type="text" id="engWord" placeholder="Inglés">
+      <input type="text" id="spaWord" placeholder="Español">
+      <button class="btn-add" onclick="addWord()">+</button>
+    </div>
+    <div class="total-words" id="totalWordsLabel"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
