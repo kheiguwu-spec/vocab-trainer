@@ -1,6 +1,6 @@
 // ─── PALABRAS ────────────────────────────────────────────────────────────────
 let words = [
-  {eng: "improve",           spa: "mejorar / perfeccionar"},
+ {eng: "improve",           spa: "mejorar / perfeccionar"},
   {eng: "checks",            spa: "revisar / comprobar / cheques"},
   {eng: "fortune telling",   spa: "adivinación / predicción"},
   {eng: "advice seeking",    spa: "búsqueda de consejos"},
@@ -90,7 +90,18 @@ let words = [
   {eng: "whether",           spa: "si (para elegir entre dos)"},
   {eng: "furthermore",       spa: "es más / además / asimismo"},
   {eng: "interview",         spa: "entrevista / entrevistar"},
-  {eng: "countless",         spa: "innumerables / incontables"}
+  {eng: "countless",         spa: "innumerables / incontables"},
+  {eng: "knowledge",         spa: "conocimiento / saber / entendimiento"},
+  {eng: "tricky part",       spa: "la parte difícil / la parte complicada / el truco"},
+  {eng: "outer",             spa: "exterior / externo / de afuera"},
+  {eng: "means",             spa: "significa / quiere decir"},
+  {eng: "dots",              spa: "puntos"},
+  {eng: "dot",               spa: "punto"},
+  {eng: "let",               spa: "dejar / permitir / (en JS: declarar variable)"},
+  {eng: "and so on",         spa: "y así sucesivamente / etcétera"},
+  {eng: "prompt",            spa: "indicación / aviso / (en IA: instrucción)"},
+  {eng: "ahead",             spa: "adelante / por delante"},
+  {eng: "shapes",            spa: "formas / figuras"}
 ];
 
 // ─── ESTADO ──────────────────────────────────────────────────────────────────
