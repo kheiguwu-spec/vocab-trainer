@@ -101,7 +101,22 @@ let words = [
   {eng: "and so on",         spa: "y así sucesivamente / etcétera"},
   {eng: "prompt",            spa: "indicación / aviso / (en IA: instrucción)"},
   {eng: "ahead",             spa: "adelante / por delante"},
-  {eng: "shapes",            spa: "formas / figuras"}
+  {eng: "shapes",            spa: "formas / figuras"},
+  {eng: "lace",              spa: "cordón / encaje / entrelazar"},
+  {eng: "douches",           spa: "duchas / personas desagradables (slang)"},
+  {eng: "bouches",           spa: "bocas (del francés, usado en slang)"},
+  {eng: "grooves",           spa: "surcos / ritmo / hendiduras"},
+  {eng: "sippin",            spa: "bebiendo a sorbos"},
+  {eng: "mad question asking", spa: "hacer demasiadas preguntas (slang)"},
+  {eng: "creep",             spa: "persona extraña / deslizarse sigilosamente"},
+  {eng: "why blow up my spot", spa: "por qué me pones en evidencia / me delatas"},
+  {eng: "but i just can't quit", spa: "pero simplemente no puedo dejarlo"},
+  {eng: "waist",             spa: "cintura"},
+  {eng: "straight up",       spa: "directamente / de verdad / honestamente"},
+  {eng: "most",              spa: "la mayoría / el más"},
+  {eng: "dial",              spa: "marcar (un número) / dial"},  
+  {eng: "steam",             spa: "vapor"},
+  {eng: "belly",             spa: "vientre / barriga"}
 ];
 
 // ─── ESTADO ──────────────────────────────────────────────────────────────────
